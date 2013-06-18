@@ -1,47 +1,69 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Clog by danieljabailey</title>
-
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <title>SuperClog by danieljabailey</title>
   </head>
+
   <body>
-    <div class="wrapper">
-      <header>
-        <h1>Clog</h1>
-        <p>PHP blogging software</p>
+    <div id="container">
+      <div class="inner">
 
-        <p class="view"><a href="https://github.com/danieljabailey/clog">View the Project on GitHub <small>danieljabailey/clog</small></a></p>
+        <header>
+          <h1>SuperClog</h1>
+          <h2>PHP blogging software</h2>
+        </header>
 
+        <section id="downloads" class="clearfix">
+          <a href="https://github.com/danieljabailey/SuperClog/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
+          <a href="https://github.com/danieljabailey/SuperClog/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
+          <a href="https://github.com/danieljabailey/SuperClog" id="view-on-github" class="button"><span>View on GitHub</span></a>
+        </section>
 
-        <ul>
-          <li><a href="https://github.com/danieljabailey/clog/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/danieljabailey/clog/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/danieljabailey/clog">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <p>User4574 wanted an exceptionally small piece of blogging software, where each post was simply a file, the title was the filename and the date was the modified time.</p>
+        <hr>
 
-<p>This is that piece of software.</p>
+        <section id="main_content">
+          <p>SuperClog</p>
+
+<p>PHP blogging software</p>
+
+<p>User4574 wanted an exceptionally small piece of blogging software, where each post was simply a file, the title was the filename and the date was the modified time.</p>
+
+<p>This was that piece of software.</p>
+
+<p>danieljabailey then wanted to use it and so this is the SuperClog fork.</p>
 
 <p>Installation (Apache):</p>
 
 <ul>
 <li>Clone the repo</li>
 <li>Create a posts directory</li>
-<li>Move settings.sample to settings.php and configure it</li>
+<li>Move settings.sample to settings.php and configure it
+
+<ul>
+<li>Most of this file explains itself</li>
+<li>Page title is what is seen on the page</li>
+<li>Header title is what is in the  tag</li>
+<li>Postmode can be used to show or hide the post link on the header of each page, you may want it to not show up if most people looking at your blog don't post things to it.</li>
+<li>If you aren't afraid of apache rewrites then set the URL style to fancy and make sure that the htaccess file works properly, otherwise leave this on ugly.</li>
+<li>You can choose an editor, plain text or TinyMCE wysiwyg.</li>
+<li>To enable sharethis, get your public key and put it in the $shareID variable, set $sharethis to true ($shareID = "abcd-efgh-ijkl-etc.";)</li>
+<li>To enable google analytics, get your "Property ID" in the $GAID variable, set $GAEnabled to true<br>
+</li>
+</ul>
+</li>
 <li>Create a .htpasswd file for posting users</li>
 <li>Create an Apache virtual host or .htaccess file based on htaccess.sample</li>
 <li>(Optional) delete .sample files</li>
-<li>Run the updatels.php file (navigate to this file in your web browser) or create a blank .lsout file.</li>
+<li>Run the updatels.php file (navigate to this file in your web browser) make sure that this creates a .lsout file and a .nmout file</li>
 </ul><p>Nginx instructions removed, not tested on nginx. for these instructions see User4574's version here: <a href="https://github.com/User4574/clog">https://github.com/User4574/clog</a></p>
 
 <p>Recent changes:</p>
@@ -51,13 +73,15 @@
 -Added inline mode to widget file (?inlinemode=1)
 -Removed the redirect on posts directory
 -Changed all css stuff to prevent other possible css conflicts</p>
-      </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/danieljabailey">danieljabailey</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
+        </section>
+
+        <footer>
+          SuperClog is maintained by <a href="https://github.com/danieljabailey">danieljabailey</a><br>
+          This page was generated by <a href="http://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="http://twitter.com/jasonlong">Jason Long</a>.
+        </footer>
+
+        
+      </div>
     </div>
-    <script src="javascripts/scale.fix.js"></script>
-    
   </body>
 </html>
