@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Clog by danieljabailey</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Clog</h1>
+        <p>PHP blogging software</p>
+
+        <p class="view"><a href="https://github.com/danieljabailey/clog">View the Project on GitHub <small>danieljabailey/clog</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/danieljabailey/clog/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/danieljabailey/clog/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/danieljabailey/clog">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <p>User4574 wanted an exceptionally small piece of blogging software, where each post was simply a file, the title was the filename and the date was the modified time.</p>
+
+<p>This is that piece of software.</p>
+
+<p>Installation (Apache):</p>
+
+<ul>
+<li>Clone the repo</li>
+<li>Create a posts directory</li>
+<li>Move settings.sample to settings.php and configure it</li>
+<li>Create a .htpasswd file for posting users</li>
+<li>Create an Apache virtual host or .htaccess file based on htaccess.sample</li>
+<li>(Optional) delete .sample files</li>
+<li>Run the updatels.php file (navigate to this file in your web browser) or create a blank .lsout file.</li>
+</ul><p>Nginx instructions removed, not tested on nginx. for these instructions see User4574's version here: <a href="https://github.com/User4574/clog">https://github.com/User4574/clog</a></p>
+
+<p>Recent changes:</p>
+
+<p>-Added basic security to the posting system to stop users uploading executable files like "run_this_file_to_murder_this_server.php" :-)
+-Added options for fancy/ugly url modes and show or hide posts link in header
+-Added inline mode to widget file (?inlinemode=1)
+-Removed the redirect on posts directory
+-Changed all css stuff to prevent other possible css conflicts</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/danieljabailey">danieljabailey</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
